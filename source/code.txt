@@ -1,0 +1,30 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script>
+
+		//Javascript variables contain content that will be inserted in various places
+		var extraContactHTML = 'Made by @fractastical';
+		var extraAboutMeHTML = 'I ::heart:: contests';
+        var extraToDoListItemHTML ='<div class="itemBox"><li id="listItem-getChatterMobile" class="incompleteClass"><a href="http://fractastical.com" target="_blank">Visit Fractastical.com</a></li></div>';
+
+		//Hides the HTML sidebar so that it is not visible
+		$('.sidebarModule.htmlAreaComponentModule').hide();  
+
+        $('#UserProfile_Tab a').click(function(ev) {        
+               ev.preventDefault();             
+               $('#bodyCell').html('').load('/_ui/core/userprofile/UserProfilePage #bodyTable', function(response, status, xhr) { 
+                		if (status == "error") { 
+                    				var msg = "Sorry but there was an error loading the profile page: ";
+                  				$("#error").html(msg + xhr.status + " " + xhr.statusText);
+	                     }  
+						else {
+								//Adds content from variables specified above
+								
+								$('.address.profileSectionData').append(extraContactHTML);  
+								$('.aboutMe').append(extraAboutMeHTML);  
+								$('#mainOuterList.listClass').append(extraToDoListItemHTML);    
+						}
+						          
+				});      
+		});    
+
+</script>

@@ -1,0 +1,12 @@
+Chatter Profile "Jailbreak"
+
+URL: http://www.cloudspokes.com/challenge_detail.html?contestID=171
+Challenge end date: Wed Apr 20 01:00:00 GMT 2011
+
+Description
+===========
+<p>This challenge is to &quot;jailbreak&quot; the Chatter User Profile Page to display custom content. The User Profile Page is the page you see in Salesforce.com when you click on a user&#39;s name in a Chatter post. </p> <p>Salesforce currently does not provide any customization controls for this page, but we really want to be able to add custom content to a new or existing section. &quot;Custom content&quot; means HTML or Visualforce, such as images, buttons and/or text styled by CSS. Imagine a use case like adding a Twitter icon that links to the user&#39;s Twitter feed (that implies you have some info on the profiled user to construct a personalized URL).</p>
+
+Requirements
+============
+<p>For this contest, find some way to add custom content to the Chatter User Profile Page, such as in the whitespace in the left column under the About Me section, or in the About Me section itself. An alternative could be to replace the entire page with a custom page, as long as the new page is shown when you click on a user in Chatter and the new page has all of the content of the current page. </p> <p>We&#39;re not looking for production-ready code, just a proof-of-concept, but note the following criteria that can contribute to high scores:</p> <p>* Simplicity of implementation <br> * Cross-browser support (modern browsers, not including IE6)</p> <p>Prizes will be awarded for partial solutions if no complete solution is entered.</p>
